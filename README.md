@@ -7,3 +7,9 @@
 
 Refer this link for Evaluation paramter invloved in Object detection models [link](https://medium.com/@nikitamalviya/evaluation-of-object-detection-models-flops-fps-latency-params-size-memory-storage-map-8dc9c7763cfe)
 
+
+# Methodology
+## <span style="color:yellow"> Consistent Dual Assignments for NMS-free Training
+![alt text](images/image2.png)
+
+## To combine the strengths of both label assignment strategies, <br> they introduced a one-to-one matching head to the YOLO model alongside the traditional one-to-many head. <br> Both heads are optimized during training, but only the one-to-one head is used for inference, eliminating the need for NMS post-processing and maintaining efficient deployment.  <span style="color:yellow"> This dual approach enhances accuracy and convergence speed.
