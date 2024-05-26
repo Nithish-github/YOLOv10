@@ -13,3 +13,20 @@ Refer this link for Evaluation paramter invloved in Object detection models [lin
 ![alt text](images/image2.png)
 
 ## To combine the strengths of both label assignment strategies, <br> they introduced a one-to-one matching head to the YOLO model alongside the traditional one-to-many head. <br> Both heads are optimized during training, but only the one-to-one head is used for inference, eliminating the need for NMS post-processing and maintaining efficient deployment. **This dual approach enhances accuracy and convergence speed.**
+refer the [docs](docs/yolov10.pdf) for more details !
+
+# Implementation
+## [Ultralytics](https://docs.ultralytics.com/) "Built an official Python package for YOLOv10."
+### Prediction
+        from ultralytics import YOLO
+
+        # Load a pretrained YOLOv10n model
+        model = YOLO("yolov10n.pt")
+
+        # Perform object detection on an image
+        results = model("image.jpg")
+
+        # Display the results
+        results[0].show()
+
+
